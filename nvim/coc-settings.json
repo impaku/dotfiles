@@ -1,0 +1,22 @@
+{
+  "diagnostic.errorSign": "E>",
+  "diagnostic.infoSign": "I>",
+  "diagnostic.warningSign": "W>",
+  "diagnostic.hintSign": "H>",
+  "diagnostic.messageTarget": "echo",
+  "suggest.keepCompleteopt": true,
+  "suggest.noselect":false,
+  "suggest.preferCompleteThanJumpPlaceholder":true,
+  "languageserver": {
+    "golang": {
+      "command": "gopls",
+      "rootPatterns": ["go.mod", ".vim/", ".git/"],
+      "filetypes": ["go"],
+      "initializationOptions": {
+        "staticcheck": true,
+        "usePlaceholders": true,
+        "completeUnimported": true
+      }
+    }
+  }
+}
